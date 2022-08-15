@@ -1,8 +1,49 @@
-/*
+.x-cursor {
+	--cursor-height: 18px;
+	position: absolute;
+	top: 0;
+	height: var(--cursor-height);
+	width: 8px;
+	background: #000;
+	transform: translate(var(--cursor-x2), var(--cursor-y2));
+	opacity: 0;
+	pointer-events: none;
+	animation: dash 75ms cubic-bezier(0.34, 1.26, 0.84, 1) 0s both;
+}
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+.x-cursor:after {
+	content: "";
+	height: var(--cursor-height);
+	width: var(--cursor-drag-width);
+	display: inline-block;
+	background: linear-gradient(to right, #8DDEE6, transparent);
+	transform: rotate(var(--cursor-drag-angle));
+	transform-origin: 4px center;
+	opacity: 0.5;
+	filter:  drop-shadow(0 0 10px #035F68);
+	pointer-events: none;
+}
 
-If your plugin does not need CSS, delete this file.
+@keyframes dash {
+	0% {
+		transform: translate(var(--cursor-x1), var(--cursor-y1));
+		opacity: 0;
+	}
 
-*/
+	4% {
+		opacity: 1;
+	}
+
+	80% {
+		opacity: 0.95;
+	}
+
+	90% {
+		transform: translate(var(--cursor-x2), var(--cursor-y2));
+		opacity: 0.9;
+	}
+
+	100% {
+		opacity: 0;
+	}
+}

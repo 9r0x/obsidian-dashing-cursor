@@ -1,10 +1,10 @@
 {
-	"id": "obsidian-sample-plugin",
-	"name": "Sample Plugin",
+	"id": "obsidian-dashing-cursor",
+	"name": "Dashing cursor",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "This is a sample plugin for Obsidian. This plugin demonstrates some of the capabilities of the Obsidian API.",
-	"author": "Obsidian",
-	"authorUrl": "https://obsidian.md",
+	"description": "Enables dashing cursor that follows the page scroll",
+	"author": "Shukai Ni",
+	"authorUrl": "https://github.com/9r0x/obsidian-dashing-cursor",
 	"isDesktopOnly": false
 }
