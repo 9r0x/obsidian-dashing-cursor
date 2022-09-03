@@ -1,5 +1,5 @@
 import { Plugin, Notice, MarkdownView } from "obsidian";
-type Coordinates = { x: number; y: number; getScroll: CallableFunction };
+type Coordinates = { x: number; y: number; getScroll: () => number };
 type MarkdownSubView = { contentContainerEl: HTMLElement };
 
 export default class NinjaCursorPlugin extends Plugin {
@@ -15,7 +15,7 @@ export default class NinjaCursorPlugin extends Plugin {
 			))
 		))?.contentContainerEl?.parentElement;
 
-		const selection = window.getSelection();
+		const selection = activeWindow.getSelection();
 		if (!parentElement || !selection || !selection.focusNode) {
 			return;
 		}
