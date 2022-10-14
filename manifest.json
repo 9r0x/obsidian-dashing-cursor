@@ -1,8 +1,8 @@
 {
 	"id": "obsidian-dashing-cursor",
 	"name": "Dashing cursor",
-	"version": "0.0.1",
-	"minAppVersion": "0.15.0",
+	"version": "0.0.2",
+	"minAppVersion": "1.0.0",
 	"description": "Enables dashing cursor that follows the page scroll",
 	"author": "Shukai Ni",
 	"authorUrl": "https://github.com/9r0x/obsidian-dashing-cursor",

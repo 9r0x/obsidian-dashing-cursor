@@ -1,6 +1,6 @@
 {
 	"name": "obsidian-dashing-cursor",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Enables dashing cursor that follows the page scroll",
 	"main": "main.js",
 	"scripts": {
